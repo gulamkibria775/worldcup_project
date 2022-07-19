@@ -1,0 +1,31 @@
+
+body{
+    background-color:white ;
+}
+
+.main{
+    align-items: center;
+   
+   
+   
+    
+}
+section{
+   
+    align-items: center;
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color:#161616;
+    color: azure;
+    width: 1200px;
+    height: 400px;
+    border-radius: 30px;
+    align-items: center;
+    border: 1px solid yellow;
+    
+}
+.banner.img{
+    width: 100%;
+}
