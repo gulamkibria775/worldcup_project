@@ -1,0 +1,270 @@
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1100px;
+  background-color: #161616;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.top {
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.topleft {
+  width: 300px;
+  padding: 40px;
+  margin: 10px;
+}
+.topleft h1 {
+  font-size: 40px;
+}
+.topleft p {
+  font-size: 15px;
+}
+.topleft button {
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color:red;
+  color: white;
+  text-align: center;
+}
+span {
+  margin-left: 10px;
+  size: 2px;
+}
+.topright {
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.topright img {
+  width: 100%;
+}
+.down {
+  display: flex;
+}
+.downcontainer {
+  margin-top: 60px;
+  background-color: white;
+}
+
+.mainleft {
+  width: 200px;
+  height: 250px;
+  background-color: black;
+  text-align: center;
+}
+.mainleftsub {
+  margin-top: 4px;
+
+  padding: 20px;
+}
+.mainleftsub button {
+  width: 130px;
+  padding: 5px;
+  margin: 10px 20px;
+  border-radius: 5px;
+}
+.blog {
+  background-color: red;
+}
+.mainright {
+  margin-left: 20px;
+  width: 880px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sport {
+  margin: 5px;
+
+  padding-left: 5px;
+  padding-bottom: 10px;
+
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flag {
+  display: flex;
+}
+.flag img {
+  padding: 5px;
+}
+.german,
+.france {
+  padding: 5px;
+}
+.time {
+  text-align: center;
+}
+.time h2,
+p {
+  font-size: 20px;
+}
+
+.displaybutton {
+  display: none;
+}
+
+footer {
+  background-color: #161616;
+  color: white;
+  margin-top: 100px;
+  height: 250px;
+}
+footer h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+footer ul {
+  display: flex;
+
+  justify-content: center;
+}
+footer ul li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+.icon a {
+  color: aliceblue;
+  padding: 20px;
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*media query */
+
+@media only screen and (max-width: 668px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .down {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .mainleft {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mainleftsub button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 8px;
+    padding: 5px;
+  }
+  .article .sport {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+    
+  }
+  .flag {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+  footer ul {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul li {
+    padding: 5px;
+    margin: 5px;
+  }
+  footer {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .topright img {
+    margin-top: 150px;
+    height: 300px;
+  }
+  .down {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .mainleftsub {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainleftsub div {
+    align-items: center;
+  }
+  .mainleft {
+    background-color: white;
+    height: 100px;
+    width: 650px;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 8px;
+    padding: 5px;
+  }
+
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    justify-self: center;
+  }
+  .displaynone {
+    display: none;
+  }
+  .displaybutton {
+    display: inline;
+    align-items: center;
+    width: 140px;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    color: aliceblue;
+  }
+  .displaybuttonp {
+    text-align: center;
+
+    display: block;
+  }
+}
